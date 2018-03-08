@@ -2,7 +2,13 @@ module.exports = {
   siteMetadata: {
     title: 'Sanaclown. Payasos de Hospital',
   },
-  plugins: ['gatsby-plugin-react-helmet',
+  plugins: [{
+              resolve: `gatsby-plugin-typography`,
+              options: {
+                pathToConfigModule: `src/utils/typography.js`,
+              },
+            },
+            'gatsby-plugin-react-helmet',
             'gatsby-plugin-styled-components'
 ],
 

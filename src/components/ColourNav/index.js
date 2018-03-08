@@ -44,7 +44,7 @@ const NavItem = props => (
     }}>
 		<Menuitem color={props.color}>
             <StyledLink to={props.to}>
-                {props.title}
+                <h4>{props.title}</h4>
             </StyledLink>
 		</Menuitem>
 	</li>
