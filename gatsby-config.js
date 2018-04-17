@@ -8,8 +8,18 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography.js`,
               },
             },
+
+            {
+              resolve: `gatsby-source-filesystem`,
+              options: {
+                name: `img`,
+                path: `${__dirname}/src/res/`,
+              }
+            },
+            'gatsby-plugin-sharp',
+            'gatsby-transformer-sharp',
             'gatsby-plugin-react-helmet',
-            'gatsby-plugin-styled-components'
+            'gatsby-plugin-styled-components',
 ],
 
 };

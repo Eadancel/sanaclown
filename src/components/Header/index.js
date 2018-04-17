@@ -1,20 +1,29 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ColourNav from '../ColourNav';
+import Img from "gatsby-image";
+import styled from "styled-components";
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+const HeaderWrp = styled.div`
+        position:absolute
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content:space-between;
+        z-index:1;
+`;
 
+const Header = props => (
+  <HeaderWrp>
+          <div>
+              <Img
+                imgStyle={{marginBottom:`0px` }}
 
+                resolutions={props.headerImage.resolutions}
+              />
+          </div>
         <ColourNav />
-
-
-  </div>
+  </HeaderWrp>
 )
 
 export default Header

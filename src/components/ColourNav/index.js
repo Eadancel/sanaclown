@@ -3,9 +3,11 @@ import styled from "styled-components";
 import Link from "gatsby-link";
 
 const Nav = styled.div`
-        position: fixed;
-        width: 100%;
-        text-align: center;
+
+
+        margin-top:3rem;
+        margin-right:2rem;
+        text-align: right;
         &:after {
             content:"";
             display:table;
