@@ -19,14 +19,15 @@ const Nav = styled.div`
 `;
 const Menuitem = styled.div`
         display: block;
-        padding: 10px 40px;
+        padding: 15px 50px;
+        padding-left: 10px;
 
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
 
-        transform: translateX(-15%);
+        transform: translateX(-25px);
         border-radius: 50px;
-        width: 130%;
+        width: calc(100% + 50px);
         text-align: center;
         transition-duration: 0.75s;
         background-color: ${props => props.color ||  'red'};
@@ -46,7 +47,9 @@ const Menuitem = styled.div`
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
-
+    & > h4 {
+        font-size:20px;
+    }
 `;
 const SubMenuWrp = styled.div`
         text-align:left;
@@ -96,10 +99,10 @@ const ColourNav = () => (
                 {id: 2, to: '/intervenciones#dos', text: 'tres'}
               ]} />
 
-             <NavItem color="#F8E71C" title="Escuela" to="/escuela" submenu={[]} growsto="37px" />
+             <NavItem color="#F8E71C" title="Escuela" to="/escuela" submenu={[]} growsto="52px" />
              <NavItem color="#417505" title="Donaciones" to="/donaciones" submenu={[]} growsto="300px"/>
              <NavItem color="#7ED321" title="Blog" to="/blog" submenu={[]} growsto="450px" />
-             <NavItem color="#4A90E2" title="Contacto" to="/contacto" submenu={[]} growsto="37px" />
+             <NavItem color="#4A90E2" title="Contacto" to="/contacto" submenu={[]} growsto="52px" />
         </ul>
     </Nav>
 )

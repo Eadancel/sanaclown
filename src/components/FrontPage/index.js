@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from "gatsby-image";
 import styled from "styled-components";
-
+import SocialBar from '../SocialBar';
 const FPwrp = styled.div`
     height:100vh
 `;
@@ -15,6 +15,7 @@ const BannerWrp = styled.div`
     width:100%;
 `;
 const Banner = styled.div `
+    position:relative;
     grid-row :2;
     text-align:center;
     justify-content : center;
@@ -29,11 +30,16 @@ const Banner = styled.div `
         margin-top:0.5em;
     }
     & > h2 {
-
         font-size:2em;
         margin-top:0.5em;
     }
 `;
+const Socialwrp = styled.div`
+    position:absolute;
+    right:0px;
+    bottom:0px;
+`;
+
 const FrontPage = props => (
     <FPwrp>
         <Img
@@ -43,6 +49,9 @@ const FrontPage = props => (
             <Banner>
                 <h1>SanaClown</h1>
                 <h2>Compa&ntilde;ia Payasos de Hospital</h2>
+                <Socialwrp>
+                    <SocialBar />
+                </Socialwrp>
             </Banner>
         </BannerWrp>
     </FPwrp>

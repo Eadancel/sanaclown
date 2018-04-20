@@ -17,7 +17,7 @@ const Header = props => (
   <HeaderWrp>
           <div>
               <Img
-                imgStyle={{marginBottom:`0px` }}
+                imgStyle={{marginBottom:`0px`, padding:`5px`}}
 
                 resolutions={props.headerImage.resolutions}
               />

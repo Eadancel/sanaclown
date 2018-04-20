@@ -16,6 +16,12 @@ module.exports = {
                 path: `${__dirname}/src/res/`,
               }
             },
+            {
+              resolve: 'gatsby-plugin-react-svg',
+              options: {
+                  include: `/src/res/icons/`,
+              }
+            },
             'gatsby-plugin-sharp',
             'gatsby-transformer-sharp',
             'gatsby-plugin-react-helmet',
