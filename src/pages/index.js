@@ -4,20 +4,30 @@ import FrontPage from '../components/FrontPage/';
 import ContentPage from '../components/ContentPage';
 
 class IndexPage extends React.Component {
+
+
   render(){
+
     return (
       <div>
         <FrontPage FrontImage={this.props.data.FrontImage} />
+
         <ContentPage
           titleColor="#D0021B"
-          title="Quienes Somos"
-          Phrase="La sonrisa es una verdadera fuerza vital, la única capaz de mover lo inconmovible"
-          ContentText="Sanaclown es una organización multidisciplinaria dedicada al clown terapéutico de hospital.
-          A través de la risa, la música, el juego, la imaginación, magia, lenguaje psicoterapeutico, el uso de titere y juguete terapeutico, contribuye en el proceso de restablecimiento del bienestar integral de las personas, entregando alegría y desdramatizando el ambiente hospitalario.
-          Sanaclown se sustenta sobre el convencimiento que la alegría y la risa son un camino certero para potenciar la existencia de individuos y grupos humanos más felices, equilibrados y activos.
-          "
+          title={this.props.data.UsContent.frontmatter.title}
+          Phrase={this.props.data.UsContent.frontmatter.phrase}
+          ContentText={this.props.data.UsContent.html}
           ContentImage={this.props.data.UsImage}
         />
+
+        <ContentPage
+          titleColor="#D0021B"
+          title={this.props.data.MisionContent.frontmatter.title}
+          Phrase={this.props.data.MisionContent.frontmatter.phrase}
+          ContentText={this.props.data.MisionContent.html}
+          ContentImage={this.props.data.MisionImage}
+        />
+
       </div>
     );
   }
@@ -33,9 +43,34 @@ export const pageQuery = graphql`
         }
     }
     UsImage: imageSharp(id: { regex: "/quien_somos/" }) {
-      sizes(maxWidth: 1240 ) {
-        ...GatsbyImageSharpSizes
+      resolutions(width: 600 ) {
+        ...GatsbyImageSharpResolutions
       }
+    }
+    MisionImage: imageSharp(id: { regex: "/mision/" }) {
+      resolutions(width: 418 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+
+    UsContent :markdownRemark(frontmatter: {id: {eq: "about"}}){
+      frontmatter{
+       title
+       phrase
+      }
+     html
+    }
+
+    MisionContent :markdownRemark(frontmatter: {id: {eq: "mision"}}){
+      frontmatter{
+       title
+       phrase
+      }
+     html
+    }
+
   }
-  }
+
+
+
 `;

@@ -19,6 +19,7 @@ const Phrase = styled.div`
     padding:10px;
     background: rgba(2,129,187,0.30);
     font-weight:bold;
+    font-family:Verdana;
 `;
 const Titlewrp = styled.div`
     position:relative;
@@ -41,10 +42,14 @@ const Content = styled.div`
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    justify-items:center;
 `;
 
 const ContentText = styled.div`
     margin: 10px;
+    font-family:Verdana;
+    font-size:18px;
+    line-height : 1.5em;
 `;
 
 const ContentPage = props => (
@@ -53,9 +58,9 @@ const ContentPage = props => (
             <Title color={props.titleColor} > {props.title}</Title>
         </Titlewrp>
         <Content>
-            <ContentText>{props.ContentText}</ContentText>
+            <ContentText dangerouslySetInnerHTML={{ __html: props.ContentText }} ></ContentText>
             <Img
-                sizes={props.ContentImage.sizes} />
+                resolutions={props.ContentImage.resolutions} />
         </Content>
         <Phrase>{props.Phrase}</Phrase>
     </CPwrp>
