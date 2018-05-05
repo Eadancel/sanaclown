@@ -2,6 +2,8 @@ import React from 'react'
 import Img from "gatsby-image";
 import styled from "styled-components";
 import SocialBar from '../SocialBar';
+import Link from "gatsby-link";
+import UPDown from '!svg-react-loader?name=Facebook!../../res/icons/up.svg';
 
 const CPwrp = styled.div`
     position:relative;
@@ -51,10 +53,15 @@ const ContentText = styled.div`
     font-size:18px;
     line-height : 1.5em;
 `;
-
+const UpIcon = styled(Link)`
+    position: absolute;
+    width:100%;
+    text-align:center;
+    bottom:5px;
+`;
 const ContentPage = props => (
-    <CPwrp>
-        <Titlewrp>
+    <CPwrp id={props.anchor}>
+        <Titlewrp >
             <Title color={props.titleColor} > {props.title}</Title>
         </Titlewrp>
         <Content>
@@ -63,6 +70,7 @@ const ContentPage = props => (
                 resolutions={props.ContentImage.resolutions} />
         </Content>
         <Phrase>{props.Phrase}</Phrase>
+        <UpIcon tp="#"> <UPDown /> </UpIcon>
     </CPwrp>
 );
 

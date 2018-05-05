@@ -13,6 +13,7 @@ class IndexPage extends React.Component {
         <FrontPage FrontImage={this.props.data.FrontImage} />
 
         <ContentPage
+          anchor="aboutus"
           titleColor="#D0021B"
           title={this.props.data.UsContent.frontmatter.title}
           Phrase={this.props.data.UsContent.frontmatter.phrase}
@@ -21,6 +22,7 @@ class IndexPage extends React.Component {
         />
 
         <ContentPage
+          anchor="mision"
           titleColor="#D0021B"
           title={this.props.data.MisionContent.frontmatter.title}
           Phrase={this.props.data.MisionContent.frontmatter.phrase}
