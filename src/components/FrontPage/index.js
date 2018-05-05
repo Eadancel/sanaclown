@@ -45,6 +45,9 @@ const FrontPage = props => (
         <Img
             style={{height:`100vh` }}
             sizes={props.FrontImage.sizes} />
+
+        {props.includeBanner=="true" &&
+
         <BannerWrp>
             <Banner>
                 <h1>SanaClown</h1>
@@ -54,6 +57,7 @@ const FrontPage = props => (
                 </Socialwrp>
             </Banner>
         </BannerWrp>
+        }
     </FPwrp>
 );
 

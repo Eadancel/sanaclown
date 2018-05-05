@@ -16,11 +16,13 @@ const HeaderWrp = styled.div`
 const Header = props => (
   <HeaderWrp>
           <div>
+            <Link to="/">
               <Img
                 imgStyle={{marginBottom:`0px`, padding:`5px`}}
 
                 resolutions={props.headerImage.resolutions}
               />
+            </Link>
           </div>
         <ColourNav />
   </HeaderWrp>

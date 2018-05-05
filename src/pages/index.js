@@ -10,10 +10,12 @@ class IndexPage extends React.Component {
 
     return (
       <div>
-        <FrontPage FrontImage={this.props.data.FrontImage} />
+        <FrontPage FrontImage={this.props.data.FrontImage}
+              includeBanner="true"/>
 
         <ContentPage
           anchor="aboutus"
+          layout='" image content "'
           titleColor="#D0021B"
           title={this.props.data.UsContent.frontmatter.title}
           Phrase={this.props.data.UsContent.frontmatter.phrase}
@@ -24,6 +26,7 @@ class IndexPage extends React.Component {
         <ContentPage
           anchor="mision"
           titleColor="#D0021B"
+          layout='" content image  "'
           title={this.props.data.MisionContent.frontmatter.title}
           Phrase={this.props.data.MisionContent.frontmatter.phrase}
           ContentText={this.props.data.MisionContent.html}
@@ -38,9 +41,9 @@ class IndexPage extends React.Component {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query GatsbyImageIndex {
+  query AboutImg {
     FrontImage: imageSharp(id: { regex: "/bkg_index/" }) {
-        sizes(maxWidth: 1240 ) {
+        sizes(maxWidth: 1440 ) {
           ...GatsbyImageSharpSizes
         }
     }

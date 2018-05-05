@@ -43,15 +43,22 @@ const Title = styled.div`
 const Content = styled.div`
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+       ${props => props.layout ||  '" content image "'}
+       ;
     grid-gap: 20px;
     justify-items:center;
 `;
 
+const ImgWrp = styled.div`
+    grid-area : image;
+`;
 const ContentText = styled.div`
     margin: 10px;
     font-family:Verdana;
     font-size:18px;
     line-height : 1.5em;
+    grid-area : content
 `;
 const UpIcon = styled(Link)`
     position: absolute;
@@ -64,10 +71,9 @@ const ContentPage = props => (
         <Titlewrp >
             <Title color={props.titleColor} > {props.title}</Title>
         </Titlewrp>
-        <Content>
+        <Content layout={props.layout}>
             <ContentText dangerouslySetInnerHTML={{ __html: props.ContentText }} ></ContentText>
-            <Img
-                resolutions={props.ContentImage.resolutions} />
+            <ImgWrp><Img resolutions={props.ContentImage.resolutions} /></ImgWrp>
         </Content>
         <Phrase>{props.Phrase}</Phrase>
         <UpIcon tp="#"> <UPDown /> </UpIcon>
