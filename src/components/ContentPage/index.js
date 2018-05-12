@@ -2,6 +2,7 @@ import React from 'react'
 import Img from "gatsby-image";
 import styled from "styled-components";
 import SocialBar from '../SocialBar';
+import ContactForm from '../ContactForm';
 import Link from "gatsby-link";
 import UPDown from '!svg-react-loader?name=Facebook!../../res/icons/up.svg';
 
@@ -60,11 +61,22 @@ const ContentText = styled.div`
     line-height : 1.5em;
     grid-area : content
 `;
+const UpIconWrp = styled.div`
+    position: absolute;
+    bottom: 7px;
+    width: 65px;
+    height: 78px;
+    left: 50%;
+`;
 const UpIcon = styled(Link)`
     position: absolute;
-    width:100%;
-    text-align:center;
-    bottom:5px;
+    left: 0;
+    right: 0;
+    margin: auto
+`;
+const ContactFormulario = styled(ContactForm)`
+    grid-area : formulario
+
 `;
 const ContentPage = props => (
     <CPwrp id={props.anchor}>
@@ -72,11 +84,19 @@ const ContentPage = props => (
             <Title color={props.titleColor} > {props.title}</Title>
         </Titlewrp>
         <Content layout={props.layout}>
+        {props.ContentType!="contactform" &&
             <ContentText dangerouslySetInnerHTML={{ __html: props.ContentText }} ></ContentText>
+        }
+        {props.ContentType=="contactform" &&
+            <ContactFormulario color={props.color}/>
+        }
             <ImgWrp><Img resolutions={props.ContentImage.resolutions} /></ImgWrp>
+
         </Content>
         <Phrase>{props.Phrase}</Phrase>
-        <UpIcon tp="#"> <UPDown /> </UpIcon>
+        <UpIconWrp>
+            <UpIcon tp="#"> <UPDown /> </UpIcon>
+        </UpIconWrp>
     </CPwrp>
 );
 

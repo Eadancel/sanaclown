@@ -15,12 +15,14 @@ class IndexPage extends React.Component {
 
         <ContentPage
           anchor="hosp"
-          layout='"image content   "'
+          layout='"image content "'
           titleColor="#4A90E2"
           title={this.props.data.ContactoContent.frontmatter.title}
           Phrase={this.props.data.ContactoContent.frontmatter.phrase}
-          ContentText={this.props.data.ContactoContent.html}
+          ContentType="contactform"
+          ContentText=""
           ContentImage={this.props.data.Image1}
+
         />
       </div>
     );
