@@ -1,7 +1,7 @@
 ---
 id: "aportes"
 date: "2018-04-21"
-title: "Donaciones"
+title: "Aportes"
 phrase: "Nulla officia laboris qui non qui."
 ---
 Non laboris excepteur consequat culpa deserunt veniam. Ullamco nisi fugiat amet minim commodo duis id exercitation labore laborum nisi in. Velit et nisi commodo officia consequat minim irure.

@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
                   includeBanner="false"/>
 
         <ContentPage
-          anchor="donaciones"
+          anchor="aportes"
           layout='" image content "'
           titleColor="#417505"
           title={this.props.data.AportesContent.frontmatter.title}
