@@ -15,4 +15,5 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - { name: body, label: Body, widget: markdown }

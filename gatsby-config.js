@@ -24,6 +24,13 @@ module.exports = {
               }
             },
             {
+              resolve: `gatsby-source-filesystem`,
+              options: {
+                name: `blog`,
+                path: `${__dirname}/blog/`,
+              }
+            },
+            {
               resolve: 'gatsby-plugin-react-svg',
               options: {
                   include: `/src/res/icons/`,
