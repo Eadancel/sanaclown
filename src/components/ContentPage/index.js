@@ -95,7 +95,7 @@ const ContentPage = props => (
         </Content>
         <Phrase>{props.Phrase}</Phrase>
         <UpIconWrp>
-            <UpIcon tp="#"> <UPDown /> </UpIcon>
+            <UpIcon to="#"> <UPDown /> </UpIcon>
         </UpIconWrp>
     </CPwrp>
 );
