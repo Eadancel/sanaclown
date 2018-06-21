@@ -81,7 +81,7 @@ const Blog = props => (
 
                 <BlogCard key={node.id}>
                     <BlogThumbNail>
-                        <img src="http://placeimg.com/368/287/nature" />
+                        <img src={node.frontmatter.thumbnail} />
                     </BlogThumbNail>
                     {console.log(node)}
                     <BlogDetails>
@@ -90,7 +90,7 @@ const Blog = props => (
                         </BlogTitle>
 
                         <BlogDescription>
-                            Flat Chrysler Automobiles is making Mopar Crate Hemi Engine             kits available as a factory-backed option for Mopar vehicles             from 1975 and earlier.
+                            {node.frontmatter.description}
                         </BlogDescription>
                     </BlogDetails>
               </BlogCard>

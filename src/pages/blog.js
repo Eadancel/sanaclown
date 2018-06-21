@@ -27,6 +27,9 @@ export const pageQuery = graphql`
           frontmatter{
             title
             date
+            categoria
+            thumbnail
+            description
           }
           html
         }
