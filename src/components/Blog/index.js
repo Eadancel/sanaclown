@@ -7,6 +7,7 @@ const CPwrp = styled.div`
     height:100vh;
     padding-left:270px;
     padding-top:271px;
+    padding-right: 30px;
 `;
 
 const CardWrp = styled.div`
