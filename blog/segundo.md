@@ -4,6 +4,7 @@ date: '2018-06-08'
 thumbnail: /assets/aportes.png
 categoria: Cursos
 title: Segundo
+description: LALALALALALALL
 layout: blog
 ---
 lalala lerolero
