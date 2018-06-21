@@ -15,8 +15,8 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { label: "Featured Image",  name: "thumbnail", widget: "image"}
-
       - {label: "Categoria", name: "categoria", widget: "select" ,options: ["Productos", "Intervenciones", "Cursos"]}
       - { name: title, label: Title }
+      - { name: description, label: Description }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - { name: body, label: Body, widget: markdown }
