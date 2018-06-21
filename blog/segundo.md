@@ -1,7 +1,7 @@
 ---
 path: segundo
 date: '2018-06-08'
-thumbnail: /assets/aportes.png
+thumbnail: /assets/interven_blog.png
 categoria: Cursos
 title: Segundo
 description: LALALALALALALL
