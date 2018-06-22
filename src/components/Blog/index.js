@@ -5,16 +5,16 @@ import Link from "gatsby-link";
 const CPwrp = styled.div`
     position:relative;
     height:100vh;
-    padding-left:270px;
+    padding-left: 100px;
     padding-top:271px;
-    padding-right: 30px;
+    padding-right: 100px;
 `;
 
 const CardWrp = styled.div`
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
+        justify-content: start;
+        flex-wrap:wrap;
         @media screen and (max-width: $mobile) {
             flex-direction: column;
         }
@@ -35,8 +35,8 @@ const BlogDetails = styled.div`
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: start;
+    padding: 15px;
     background: $color-white;
     box-shadow: 0 1px 7px rgba(0,0,0,0.5);
 `;
@@ -48,6 +48,7 @@ const BlogTitle = styled.div`
     letter-spacing: -0.6px;
     text-align: left;
     line-height: 30px;
+    padding-bottom:10px;
 `;
 const BlogDescription = styled.div`
 
@@ -58,7 +59,21 @@ const BlogDescription = styled.div`
     text-align: left;
     line-height: 22px;
 `;
-
+const BlogCategoria = styled.div`
+    font-family: Verdana;
+    font-size: 14px;
+    color: #00A4CB;
+    letter-spacing: -0.34px;
+    text-align: left;
+`;
+const BlogFecha = styled.div`
+    font-family: Verdana;
+    font-size: 13px;
+    color: #6B6B6B;
+    letter-spacing: -0.38px;
+    text-align: left;
+    line-height: 18px;
+`;
 const ButtonAction = styled.button`
     background: transparent;
     border: none;
@@ -73,7 +88,7 @@ const ButtonAction = styled.button`
 const Blog = props => (
     <CPwrp>
         <h4>{props.posts.totalCount} Posts</h4>
-        {console.log(props.posts)}
+
         <CardWrp>
 
 
@@ -84,12 +99,17 @@ const Blog = props => (
                     <BlogThumbNail>
                         <img src={node.frontmatter.thumbnail} />
                     </BlogThumbNail>
-                    {console.log(node)}
+
                     <BlogDetails>
                         <BlogTitle>
                             {node.frontmatter.title}
                         </BlogTitle>
-
+                        <BlogCategoria>
+                            {node.frontmatter.categoria}
+                        </BlogCategoria>
+                        <BlogFecha>
+                            {node.frontmatter.date}
+                        </BlogFecha>
                         <BlogDescription>
                             {node.frontmatter.description}
                         </BlogDescription>

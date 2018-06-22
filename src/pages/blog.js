@@ -26,7 +26,7 @@ export const pageQuery = graphql`
         node {
           frontmatter{
             title
-            date
+            date (formatString: "MMMM DD, YYYY", locale: "es")
             categoria
             thumbnail
             description

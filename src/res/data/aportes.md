@@ -4,6 +4,6 @@ date: "2018-04-21"
 title: "Aportes"
 phrase: "Nulla officia laboris qui non qui."
 ---
-Non laboris excepteur consequat culpa deserunt veniam. Ullamco nisi fugiat amet minim commodo duis id exercitation labore laborum nisi in. Velit et nisi commodo officia consequat minim irure.
+Donaciones: Sanaclown busca mejorar la experiencia hospitalaria, para ello puedes colaborar con nuestro movimiento de amor y alegría en hospitales a través de donaciones aisladas o bien donaciones mensuales. Con tu aporte estarás apoyando a que más niños, niñas y familias puedan recibir nuestras intervenciones payasas.
 
-Officia laborum ut laboris pariatur eiusmod ex occaecat eiusmod consequat amet dolor. Laborum quis minim culpa mollit nisi velit minim cupidatat. Dolor exercitation minim ea nulla. Reprehenderit eu officia eiusmod ea dolor reprehenderit minim officia et. Sit ad aliquip consequat adipisicing Lorem anim duis consequat. Culpa consequat eu amet deserunt quis eiusmod. Exercitation irure est do sint mollit sint fugiat cupidatat.
+Merchandising: Otra forma de apoyar nuestro trabajo es por medio de la compra de nuestros productos, con originales diseños de nuestro ilustrador estrella Dr Nervio Vago.

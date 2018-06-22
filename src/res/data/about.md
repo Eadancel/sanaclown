@@ -5,8 +5,6 @@ title: "Quienes Somos"
 phrase: "La sonrisa es una verdadera fuerza vital, la única capaz de mover lo inconmovible"
 ---
 
-Sanaclown es una organización multidisciplinaria dedicada al clown terapéutico de hospital.
+Somos una Asociación multidisciplinaria de porteños dedicados al clown terapéutico de hospital, que funciona hace 11 años en Hospital Carlos Van Buren.
 
-A través de la risa, la música, el juego, la imaginación, magia, lenguaje psicoterapeutico, el uso de titere y juguete terapeutico, contribuye en el proceso de restablecimiento del bienestar integral de las personas, entregando alegría y desdramatizando el ambiente hospitalario.
-
-Sanaclown se sustenta sobre el convencimiento que la alegría y la risa son un camino certero para potenciar la existencia de individuos y grupos humanos más felices, equilibrados y activos.
+Colaboramos con los equipos del hospital favoreciendo los procesos de restablecimiento de la salud de niños y niñas internados, entregando alegría y bienestar por medio de técnicas como el clown teatral, musicoterapia, terapia de juego, mimo y gesto, cuentos, entre otros. Como parte de este apoyo también son favorecidos por nuestras intervenciones los familiares de los pacientes y el personal del hospital.
