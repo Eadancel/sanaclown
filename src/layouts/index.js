@@ -10,10 +10,10 @@ class TemplateWrapper extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="SanaClown - Payasos Hospital"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Payasos Hospital' },
+            { name: 'keywords', content: 'payasos, clown, sanaclown, valparaiso, vanburen, hospital, alegria' },
           ]}
         />
         <Header headerImage={this.props.data.headerImage}/>

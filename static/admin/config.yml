@@ -23,4 +23,5 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - { name: "slug", widget: "hidden", default: "{{slug}}"}
       - { name: body, label: Body, widget: markdown }
