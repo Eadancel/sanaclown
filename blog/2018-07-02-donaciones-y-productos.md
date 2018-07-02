@@ -1,5 +1,5 @@
 ---
-path: Donaciones y Productos
+path: donaciones_productos
 date: '2018-07-02'
 thumbnail: /assets/nuevos_prods.png
 categoria: Productos
@@ -7,7 +7,7 @@ title: Donaciones y Productos
 description: ' ¿¿Quieres ayudarnos y no sabes cómo?? '
 layout: blog
 ---
-Tenemos originales productos ilustrados por el Dr. Nervio Vago. 
+Tenemos originales productos ilustrados por el Dr. Nervio Vago.
 
 Puedes conseguirlos a través de nuestra fan page 😉
 

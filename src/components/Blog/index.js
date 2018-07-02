@@ -102,7 +102,9 @@ const Blog = props => (
 
                     <BlogDetails>
                         <BlogTitle>
-                            {node.frontmatter.title}
+                            <Link to={node.fields.slug}>
+                                {node.frontmatter.title}
+                            </Link>
                         </BlogTitle>
                         <BlogCategoria>
                             {node.frontmatter.categoria}

@@ -32,6 +32,9 @@ export const pageQuery = graphql`
             description
           }
           html
+          fields{
+            slug
+          }
         }
       }
     }
