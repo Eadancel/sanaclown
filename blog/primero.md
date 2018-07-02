@@ -1,7 +1,7 @@
 ---
 path: Juego Terapeutico
 date: '2018-05-26'
-thumbnail: /assets/nuevos_prods.png
+thumbnail: /assets/juego_front.png
 categoria: Cursos
 title: Juego Terapéurico
 description: ' El sábado 26 tuvimos una jornada del juego terapéutico donde hablamos de nuestra experiencia en hospitales, el trato humanizado y sobre experiencia oncológica.'
