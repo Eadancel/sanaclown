@@ -45,10 +45,9 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     const posts = result.data.allMarkdownRemark.edges;
 
 
-    posts.forEach(edge => {
+    posts.forEach((edge,index) => {
         const id = edge.node.id;
-        console.log(edge.node.fields.slug);
-        console.log(edge.node.frontmatter.layout);
+
         createPage({
           path: edge.node.fields.slug,
           component: path.resolve(
@@ -56,6 +55,8 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           ),
           context: {
             id,
+            prev: index === 0 ? null : posts[index - 1].node,
+            next: index === posts.length - 1 ? null : posts[index + 1].node,
           },
         })
       })
@@ -69,7 +70,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     if (node.internal.type === `MarkdownRemark`) {
       const value = createFilePath({ node, getNode })
-      console.log(value);
       createNodeField({
         name: `slug`,
         node,

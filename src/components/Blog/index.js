@@ -97,7 +97,9 @@ const Blog = props => (
 
                 <BlogCard key={node.id}>
                     <BlogThumbNail>
-                        <img src={node.frontmatter.thumbnail} />
+                        <Link to={node.fields.slug}>
+                            <img src={node.frontmatter.thumbnail} />
+                        </Link>
                     </BlogThumbNail>
 
                     <BlogDetails>
