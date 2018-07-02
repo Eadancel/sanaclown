@@ -20,14 +20,12 @@ const Links = styled.div`
   justify-content:space-between;
 `;
 const DivLinks = props => {
-  console.log(props.prev);
-  console.log(props.next);
+
   const next=props.next;
   const prev=props.prev;
 
   return (
       <Links>
-
         <p>
           {prev && <Link to={prev.fields.slug}> {prev.frontmatter.title}</Link>
           }
