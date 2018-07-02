@@ -7,4 +7,8 @@ title: Intervencion dia del Amor
 description: LALALLALA
 layout: blog
 ---
-LEROLERO LERO
+Nos llena de alegría ver que cada vez hay más funcionarios atreviendose a jugar 😊
+
+
+
+Gracias a esto salen de la rutina, se emocionan, ríen y disminuyen sus niveles de estrés. Un funcionario feliz genera sentimientos de confianza, cooperación y tranquilidad en los pacientes, promoviendo un ambiente hospitalario más amable 💊😉
