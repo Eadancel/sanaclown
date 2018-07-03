@@ -20,7 +20,10 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query Blog {
-    Posts: allMarkdownRemark(filter:{frontmatter: {layout:{eq:"blog"}}}) {
+    Posts: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date]},
+        filter:{frontmatter: {layout:{eq:"blog"}}}
+      ) {
       totalCount
       edges {
         node {
