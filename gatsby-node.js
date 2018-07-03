@@ -14,9 +14,10 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
   return graphql (
     `{
-        allMarkdownRemark(filter: {
+        allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date]},
-            frontmatter: {layout: {eq: "blog"}}}) {
+            filter: {frontmatter: {layout: {eq: "blog"}}})
+            {
             totalCount
             edges {
               node {
