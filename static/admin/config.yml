@@ -25,3 +25,16 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - { name: "slug", widget: "hidden", default: "{{slug}}"}
       - { name: body, label: Body, widget: markdown }
+  - name: doctores
+    label: Doctores
+    folder: doctores
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "doctor"}
+      - { name: nombre, label: Nombre }
+      - { label: "Featured Image",  name: "thumbnail", widget: "image"}
+      - { name: twitter, label: Twitter }
+      - { name: instagram, label: Instagram }
+      - { name: facebook, label: Facebook }
+      - { name: semblanza, label: Semblanza, widget markdown}
