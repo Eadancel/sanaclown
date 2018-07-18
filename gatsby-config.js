@@ -31,6 +31,13 @@ module.exports = {
               }
             },
             {
+              resolve: `gatsby-source-filesystem`,
+              options: {
+                name: `blog`,
+                path: `${__dirname}/doctores/`,
+              }
+            },
+            {
               resolve: 'gatsby-plugin-react-svg',
               options: {
                   include: `/src/res/icons/`,

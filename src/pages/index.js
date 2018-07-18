@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import FrontPage from '../components/FrontPage/';
 import ContentPage from '../components/ContentPage';
+import TeamPage from '../components/TeamPage';
 
 class IndexPage extends React.Component {
 
 
   render(){
-
+    console.log(this.props.data);
     return (
       <div>
         <FrontPage FrontImage={this.props.data.FrontImage}
@@ -31,6 +32,13 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.MisionContent.frontmatter.phrase}
           ContentText={this.props.data.MisionContent.html}
           ContentImage={this.props.data.MisionImage}
+        />
+
+        <TeamPage
+          anchor="doctores"
+          titleColor="#D0021B"
+          title="Doctores"
+          semblanzas={this.props.data.Semblanzas}
         />
 
       </div>
@@ -66,6 +74,23 @@ export const pageQuery = graphql`
      html
     }
 
+    Semblanzas: allMarkdownRemark(filter: {frontmatter: {layout: {eq: "doctor"}}}){
+      totalCount
+      edges{
+        node{
+          frontmatter{
+            semblanza
+            nombre
+            thumbnail
+            twitter
+            instagram
+            facebook
+          }
+          html
+        }
+      }
+    }
+
     MisionContent :markdownRemark(frontmatter: {id: {eq: "mision"}}){
       frontmatter{
        title
@@ -73,7 +98,6 @@ export const pageQuery = graphql`
       }
      html
     }
-
   }
 
 
