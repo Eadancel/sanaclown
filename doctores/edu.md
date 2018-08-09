@@ -1,14 +1,17 @@
 ---
-path: edu
+path: tonejo
 layout: doctor
-nombre: Dra Edu
+nombre: Dr. Tonejo Disperso
 thumbnail: /assets/edu.png
-twitter: 'http://www.twitter.com/sanaclown_asereje'
-instagram: 'http://www.twitter.com/sanaclown_asereje'
-facebook: 'http://www.twitter.com/sanaclown_asereje'
-semblanza: |-
-  Dr. Edu
-
-  Especialista en prender la imaginación de los niños.
 ---
+**Nombre**: Eduardo Matías Bustamante Contreras
 
+**Edad**: 27 años
+
+**Ocupación**: diseñador grafico, mago infantil profesional
+
+**¿Por qué le pusieron ese nombre?**: En honor al gran conejo chuchu a travez de una amistad y el apellido por la impecable visualisación de los clownpañeros ante mi ser.
+
+**Especialidad Médica**: Audiomusicales internos en diplomado en habilidades magicus
+
+**Juguete Favorito**: vacuna contra la monosis
