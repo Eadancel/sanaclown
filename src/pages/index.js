@@ -79,12 +79,8 @@ export const pageQuery = graphql`
       edges{
         node{
           frontmatter{
-            semblanza
             nombre
             thumbnail
-            twitter
-            instagram
-            facebook
           }
           html
         }

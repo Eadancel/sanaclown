@@ -4,7 +4,7 @@ import SocialBar from '../SocialBar';
 
 const Teamwrp = styled.div`
     display : grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 `;
 
 const ImgWrp = styled.div`
@@ -15,6 +15,7 @@ const ImgWrp = styled.div`
 const MiniFicha = styled.div`
     display : flex ;
     flex-direction : column ;
+    width : 146px;
 `;
 const FichaMarco = styled.div`
     display:flex;
@@ -25,7 +26,8 @@ const FichaMarco = styled.div`
 `;
 const HeaderDoc = styled.div`
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    width:146px;
 `;
 const SocialBlack =styled(SocialBar)`
     fill: #000000;
@@ -37,24 +39,20 @@ const Ficha = props =>(
     <FichaMarco>
         <HeaderDoc>
             <img src={props.image} />
-            <SocialBlack
-                        fb={props.fb}
-                        tw={props.tw}
-                        />
+
         </HeaderDoc>
-        <TextoSemblaza>
-            <p>{props.texto}</p>
-        </TextoSemblaza>
+        <h3>{props.nombre}</h3>
+        <TextoSemblaza dangerouslySetInnerHTML={{ __html: props.texto }}></TextoSemblaza>
     </FichaMarco>
 );
 
 class Team extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props.semblanzas);
         this.state = {
            imgSrc: '',
            texto : '',
+           nombre : '',
            facebook :'',
            twitter :'',
         };
@@ -64,7 +62,8 @@ class Team extends React.Component {
       handleMouseOver(node) {
         this.setState({
             imgSrc: node.frontmatter.thumbnail,
-            texto : node.frontmatter.semblanza,
+            texto : node.html,
+            nombre : node.frontmatter.nombre,
             facebook :node.frontmatter.facebook,
             twitter :node.frontmatter.twitter,
         });
@@ -74,6 +73,7 @@ class Team extends React.Component {
         this.setState({
           imgSrc: '',
           texto : '',
+          nombre :'',
           facebook :'',
           twitter :'',
         });
@@ -85,6 +85,7 @@ class Team extends React.Component {
           <Teamwrp>
             <Ficha image={this.state.imgSrc}
                    texto={this.state.texto}
+                   nombre={this.state.nombre}
                    fb={this.state.facebook}
                    tw={this.state.twitter}
                    />
@@ -92,7 +93,7 @@ class Team extends React.Component {
                 {edges.map(({node}) =>
                     <MiniFicha>
                         <img onMouseOver={this.handleMouseOver.bind(this,node)} onMouseOut={this.handleMouseOut.bind(this)} src={node.frontmatter.thumbnail}/>
-                        <p>{node.frontmatter.nombre}</p>
+                        <div>{node.frontmatter.nombre}</div>
                     </MiniFicha>
                 )}
             </ImgWrp>
