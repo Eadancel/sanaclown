@@ -1,14 +1,17 @@
 ---
 path: profe
 layout: doctor
-nombre: Dra. Profe
+nombre: Dra. Amalila
 thumbnail: /assets/ana_maria.png
-twitter: 'http://www.twitter.com/sanaclown_asereje'
-instagram: 'http://www.twitter.com/sanaclown_asereje'
-facebook: 'http://www.twitter.com/sanaclown_asereje'
-semblanza: |-
-  Dra. Profe
-
-  Especialista en enseñar cosas entretenidas a nuestros niños.
 ---
+**Nombre**: Ana María Méndez Cowell
 
+**Edad**:58 años
+
+**Ocupación**: Profesora de Educación Básica, Académica Universidad de Playa Ancha
+
+**¿Por qué le pusieron ese nombre?** Es un juego mezcla de la forma en que llamaban de niña y mi gusto del último tiempo por el color lila.
+
+**Especialidad Médica**: especialista en sacar sonrisas atascadas
+
+**Juguete Favorito**:el estetoscopio frutillístico y cítrico que permite auscultar corazones-hombros.
