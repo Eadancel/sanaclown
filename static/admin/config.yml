@@ -16,7 +16,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
-
       - { name: date, label: Date, widget: date }
       - { label: "Featured Image",  name: "thumbnail", widget: "image"}
       - { label: "Categoria", name: "categoria", widget: "select" ,options: ["Productos", "Intervenciones", "Cursos"]}
@@ -25,6 +24,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - { name: "slug", widget: "hidden", default: "{{slug}}"}
       - { name: body, label: Body, widget: markdown }
+
   - name: doctores
     label: Doctores
     folder: doctores
