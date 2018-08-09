@@ -1,14 +1,17 @@
 ---
 path: chape
 layout: doctor
-nombre: Dra. Chape
+nombre: Dra. Chape Cito
 thumbnail: /assets/chape.png
-twitter: 'http://www.twitter.com/sanaclown_chape'
-instagram: 'http://sanaclown_chape'
-facebook: 'http://facebook.com/sanaclown_chape'
-semblanza: |-
-  Dra Chape
-
-  Experta en risas y juegos
 ---
+**Nombre**: Francisca del Rio Zúñiga
 
+**Edad**: 35 años
+
+**Ocupación**: Psicóloga Infanto-Juvenil, Terapeuta de Juego, Clown Terapéuticos de Hospital y Docente
+
+**¿Por qué le pusieron ese nombre?** Por mi peinado favorito. 
+
+**Especialidad Médica:** Imaginación para sanar.
+
+**Juguete Favorito**: Un huevito. Sirve para todo, hay un mundo dentro y fuera de él,  donde existen infinitas posibilidades.
