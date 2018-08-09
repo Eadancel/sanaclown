@@ -2,7 +2,7 @@
 path: aguita
 layout: doctor
 nombre: Dra Aguita Da Silva
-thumbnail: /assets/monho.png
+thumbnail: /assets/aguita.png
 ---
 **Nombre Real**: Camila Pichuante Cruz
 
