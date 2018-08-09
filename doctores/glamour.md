@@ -1,14 +1,17 @@
 ---
 path: glamour
 layout: doctor
-nombre: Dra Glamour
+nombre: Dra Glamur
 thumbnail: /assets/glamour.png
-twitter: 'http://www.twitter.com/sanaclown_glamour'
-instagram: 'http://www.twitter.com/sanaclown_glamour'
-facebook: 'http://www.twitter.com/sanaclown_glamour'
-semblanza: |-
-  Dra Glamour
-
-  Especialista en mejorar la pinta de los funcionarios del hospital.
 ---
+**Nombre**: Nora Julieta Rodríguez Valenzuela
 
+**Edad**: 32 años
+
+**Ocupación**: Educadora Diferencial con mención en Trastornos de Aprendizaje, Audición y Lenguaje y Discapacidad Intelectual
+
+**¿Por qué le pusieron ese nombre?** me imaginaba casi como una bola disco con patas, que tuviera algo que ver con la música, con la fiesta y el brillo, glamurosa
+
+**Especialidad Médica**: Especialista en Bailes Exóticos, Cirugías Estíticas y Ridículoterapia
+
+**Juguete Favorito**: el vestido de novia (en la cartera)… siempre es bueno estar preparada por si aparece el amorss (lov is in di er)
