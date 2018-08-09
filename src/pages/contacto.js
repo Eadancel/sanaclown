@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
         <ContentPage
           anchor="hosp"
           layout='"image content "'
-          titleColor="#4A90E2"
+          titleColor="#9D4AE2"
           title={this.props.data.ContactoContent.frontmatter.title}
           Phrase={this.props.data.ContactoContent.frontmatter.phrase}
           ContentType="contactform"

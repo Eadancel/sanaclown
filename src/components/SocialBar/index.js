@@ -27,9 +27,15 @@ const ListItemLink = props =>
 
 const SocialBar = props => (
     <ListIcon>
-        <ListItemLink to="https://itunes.apple.com/us/artist/muriel-lama/1294925042"> <Facebook /> </ListItemLink>
-        <ListItemLink to="https://itunes.apple.com/us/artist/muriel-lama/1294925042"> <Twitter /> </ListItemLink>
-        <ListItemLink to="https://itunes.apple.com/us/artist/muriel-lama/1294925042"> <Youtube /> </ListItemLink>
+        { props.fb &&
+        <ListItemLink to={ props.fb }> <Facebook /> </ListItemLink>
+        }
+        { props.tw &&
+        <ListItemLink to={props.tw}> <Twitter /> </ListItemLink>
+        }
+        { props.yt &&
+        <ListItemLink to={props.yt}> <Youtube /> </ListItemLink>
+        }
     </ListIcon>
 );
 

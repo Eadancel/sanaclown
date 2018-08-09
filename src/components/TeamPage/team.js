@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import SocialBar from '../SocialBar';
 
 const Teamwrp = styled.div`
     display : grid;
@@ -15,14 +16,36 @@ const MiniFicha = styled.div`
     display : flex ;
     flex-direction : column ;
 `;
-
+const FichaMarco = styled.div`
+    display:flex;
+    flex-direction: column;
+    background: #F3F1F1;
+    border: 1px solid #979797;
+    border-radius: 63px;
+`;
+const HeaderDoc = styled.div`
+    display:flex;
+    flex-direction: row;
+`;
+const SocialBlack =styled(SocialBar)`
+    fill: #000000;
+`;
+const TextoSemblaza = styled.div`
+    flex:1;
+`;
 const Ficha = props =>(
-    <div>
-        <p>{props.image}</p>
-        <p>{props.texto}</p>
-        <p>{props.fb}</p>
-        <p>{props.tw}</p>
-    </div>
+    <FichaMarco>
+        <HeaderDoc>
+            <img src={props.image} />
+            <SocialBlack
+                        fb={props.fb}
+                        tw={props.tw}
+                        />
+        </HeaderDoc>
+        <TextoSemblaza>
+            <p>{props.texto}</p>
+        </TextoSemblaza>
+    </FichaMarco>
 );
 
 class Team extends React.Component {
@@ -30,7 +53,10 @@ class Team extends React.Component {
         super(props);
         console.log(props.semblanzas);
         this.state = {
-           imgSrc: 'http://demo.sodhanalibrary.com/images/twitter_blue.png'
+           imgSrc: '',
+           texto : '',
+           facebook :'',
+           twitter :'',
         };
 
       }

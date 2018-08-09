@@ -51,9 +51,13 @@ const FrontPage = props => (
         <BannerWrp>
             <Banner>
                 <h1>SanaClown</h1>
-                <h2>Compa&ntilde;ia Payasos de Hospital</h2>
+                <h2>Asociaci&oacute;n de Payasos Terap&eacute;uticos de Hospital</h2>
                 <Socialwrp>
-                    <SocialBar />
+                    <SocialBar
+                        fb="http://www.facebook.com/Sanaclown"
+                        tw="http://www.facebook.com/Sanaclown"
+                        yt="http://www.facebook.com/Sanaclown"
+                        />
                 </Socialwrp>
             </Banner>
         </BannerWrp>

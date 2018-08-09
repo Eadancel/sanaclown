@@ -22,7 +22,7 @@ const Menuitem = styled.div`
         padding: 15px 20px;
         /* padding-left: 10px; */
 
-        font-size: 20px;
+        font-size: 18px;
         position: relative;
 
         width:${props => props.widthmenu || '250px'};
@@ -50,10 +50,10 @@ const StyledLink = styled(Link)`
     width:200px;
     color: white;
     & > h3 {
-        font-size:20px;
+        font-size:18px;
     }
     & > h4 {
-        font-size:18px;
+        font-size:16px;
     }
 `;
 const SubMenuWrp = styled.div`
@@ -93,7 +93,7 @@ const SubMenu = props => (
 const ColourNav = () => (
     <Nav>
         <ul>
-            <NavItem color="#D0021B" title="Quienes Somos" to="/" growsto="170px" widthmenu="230px" translateX="200px" align="left"
+            <NavItem color="#D0021B" title="Quienes Somos" to="/" growsto="170px" widthmenu="220px" translateX="200px" align="left"
             submenu={[
                 {id: 1, to: '/#aboutus', text: 'Sanaclown'},
                 {id: 2, to: '/#mision', text: 'Mision'}
@@ -101,25 +101,27 @@ const ColourNav = () => (
             ]} />
             <NavItem color="#F5A623" title="Intervenciones" to="/intervenciones" widthmenu="230px" translateX="160px" growsto="170px" align="left"
             submenu={[
-                {id: 1, to: '/intervenciones#hosp', text: 'Hosp. von Buren'},
+                {id: 1, to: '/intervenciones#hosp', text: 'Hosp. van Buren'},
                 {id: 2, to: '/intervenciones#instituciones', text: 'Instituciones'}
               ]} />
 
-             <NavItem color="#F8E71C" title="Escuela" to="/escuela" widthmenu="210px" translateX="120px" submenu={[
-                 {id: 1, to: '/escuela#cursos', text: 'Cursos'},
-                 {id: 2, to: '/escuela#seminarios', text: 'Seminarios'},
-                 {id: 3, to: '/escuela#capacitaciones', text: 'Capacitaciones'}
-             ]} growsto="170px" />
+             <NavItem color="#7ED321" title="Servicios" to="/servicios" widthmenu="195px" translateX="120px" submenu={[
+                 {id: 1, to: '/servicios#charlas', text: 'Charlas'},
+                 {id: 2, to: '/servicios#jornadas', text: 'Jornadas'},
+                 {id: 3, to: '/servicios#talleres', text: 'Talleres Intensivos'},
+                 {id: 4, to: '/servicios#consulta', text: 'Consulta Ambulatoria'},
+                 {id: 5, to: '/servicios#apoyo', text: 'Apoyo Equipos de Salud'}
+             ]} growsto="230px" align="left" />
 
-             <NavItem color="#417505" title="Donaciones" to="/donaciones" widthmenu="190px" translateX="80px" growsto="170px" align="left"
+             <NavItem color="#417505" title="Como ayudar?" to="/donaciones" widthmenu="200px" translateX="80px" growsto="170px" align="left"
              submenu={[
                 {id: 1, to: '/donaciones#aportes', text: 'Aportes'},
                 {id: 2, to: '/donaciones#productos', text: 'Productos'}
 
              ]} />
 
-             <NavItem color="#7ED321" title="Blog" to="/blog" submenu={[]}  widthmenu="150px" translateX="40px" growsto="52px" align="left"/>
-             <NavItem color="#4A90E2" title="Contacto" to="/contacto" submenu={[]}  widthmenu="160px" translateX="0px" growsto="52px" />
+             <NavItem color="#4A90E2" title="Noticias" to="/noticias" submenu={[]}  widthmenu="170px" translateX="40px" growsto="50px" align="left"/>
+             <NavItem color="#9D4AE2" title="Contacto" to="/contacto" submenu={[]}  widthmenu="160px" translateX="0px" growsto="50px" />
         </ul>
     </Nav>
 )
