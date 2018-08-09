@@ -1,14 +1,19 @@
 ---
-path: monho
+path: aguita
 layout: doctor
-nombre: Dra Moño
+nombre: Dra Aguita Da Silva
 thumbnail: /assets/monho.png
-twitter: 'http://www.twitter.com/sanaclown_asereje'
-instagram: 'http://www.twitter.com/sanaclown_asereje'
-facebook: 'http://www.twitter.com/sanaclown_asereje'
-semblanza: |-
-  Dra Moño.
-
-  Especialista en mejorar los peinados de nuestros niños.
 ---
+**Nombre Real**: Camila Pichuante Cruz
 
+**Edad**: 29 años
+
+**Ocupación**: Terapeuta Holística, Payasa y Tititiritera
+
+**¿Por qué le pusieron ese nombre?**: por que fluye, se escurre, congela, evapora. Vivir
+
+intensamente y sutilmente todas las formas y emociones.
+
+**Especialidad Médica**: regular el flujo de la emoción a través de canticos mágicos.
+
+**Juguetes Favorito**: Patito, tornillo y atornillador para ajustes varios, huevito, chanchito de goma, un martillo, kazoo, mini bola de disco, unos ojos, burbujas, pollo de oro.
