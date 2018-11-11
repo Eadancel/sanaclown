@@ -2,7 +2,7 @@
 path: nervio
 layout: doctor
 nombre: Dr. Nervio
-thumbnail: /assets/monho.png
+thumbnail: /assets/none.svg
 ---
 **Nombre**: Claudio Andres Ahumada Mesina
 
