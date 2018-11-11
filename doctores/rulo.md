@@ -2,7 +2,7 @@
 path: rulo
 layout: doctor
 nombre: Dra. Rulo
-thumbnail: /assets/monho.png
+thumbnail: /assets/rulo.png
 ---
 **Nombre**: Margarita Abarzúa Ruiz
 
