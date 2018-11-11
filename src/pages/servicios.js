@@ -48,7 +48,7 @@ class IndexPage extends React.Component {
           title={this.props.data.ConsultaContent.frontmatter.title}
           Phrase={this.props.data.ConsultaContent.frontmatter.phrase}
           ContentText={this.props.data.ConsultaContent.html}
-          ContentImage={this.props.data.Image3}
+          ContentImage={this.props.data.Image4}
         />
         <ContentPage
 
@@ -58,7 +58,7 @@ class IndexPage extends React.Component {
           title={this.props.data.ApoyoContent.frontmatter.title}
           Phrase={this.props.data.ApoyoContent.frontmatter.phrase}
           ContentText={this.props.data.ApoyoContent.html}
-          ContentImage={this.props.data.Image3}
+          ContentImage={this.props.data.Image5}
         />
       </div>
     );
@@ -89,7 +89,16 @@ export const pageQuery = graphql`
           ...GatsbyImageSharpResolutions
         }
     }
-
+    Image4: imageSharp(id: { regex: "/consulta/" }) {
+      resolutions(width: 668 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    Image5: imageSharp(id: { regex: "/donantes/" }) {
+      resolutions(width: 668 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
     CharlasContent :markdownRemark(frontmatter: {id: {eq: "charlas"}}){
       frontmatter{
        title
