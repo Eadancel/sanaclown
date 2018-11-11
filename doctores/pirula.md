@@ -2,7 +2,7 @@
 path: pirula
 layout: doctor
 nombre: Dra Pirula Margarita
-thumbnail: /assets/monho.png
+thumbnail: /assets/pirula.png
 ---
 **Nombre**: Barbara Asenjo
 
