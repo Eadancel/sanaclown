@@ -2,7 +2,7 @@
 path: profe
 layout: doctor
 nombre: Dra. Amalila
-thumbnail: /assets/ana_maria.png
+thumbnail: /assets/amalila.png
 ---
 **Nombre**: Ana María Méndez Cowell
 
