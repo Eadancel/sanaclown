@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="146px" viewBox="0 0 146 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>IMG_3142 Copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="72" cy="72" r="72"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portada" transform="translate(-632.000000, -2504.000000)">
+            <g id="Doctores" transform="translate(632.000000, 2501.000000)">
+                <g id="Group-9-Copy" transform="translate(0.000000, 4.000000)">
+                    <g id="IMG_3142-Copy-9" transform="translate(1.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#979797" fill="#D8D8D8" xlink:href="#path-1"></use>
+                        <text id="?" mask="url(#mask-2)" font-family="Arial-BoldMT, Arial" font-size="144" font-weight="bold" fill="#D0021B">
+                            <tspan x="28.0195312" y="124">?</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
