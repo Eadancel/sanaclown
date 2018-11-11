@@ -2,7 +2,7 @@
 path: Kessia
 layout: doctor
 nombre: Dra. Kessita
-thumbnail: /assets/monho.png
+thumbnail: /assets/kessita.png
 ---
 **Nombre**: Kessia andrea Guerra Manguein
 
