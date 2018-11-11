@@ -2,7 +2,7 @@
 path: aleli
 layout: doctor
 nombre: Dra. Alelí
-thumbnail: /assets/monho.png
+thumbnail: /assets/aleli.png
 ---
 **Nombre**: Marlene Pinilla Schulz
 
