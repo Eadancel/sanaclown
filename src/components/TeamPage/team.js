@@ -16,6 +16,7 @@ const MiniFicha = styled.div`
     display : flex ;
     flex-direction : column ;
     width : 146px;
+    padding:2px;
 `;
 const FichaMarco = styled.div`
     display:flex;
@@ -23,6 +24,7 @@ const FichaMarco = styled.div`
     background: #F3F1F1;
     border: 1px solid #979797;
     border-radius: 63px;
+    padding:2px;
 `;
 const HeaderDoc = styled.div`
     display:flex;
