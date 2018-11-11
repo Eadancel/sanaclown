@@ -2,7 +2,7 @@
 path: chureja
 layout: doctor
 nombre: Dr. Chureja
-thumbnail: /assets/monho.png
+thumbnail: /assets/chureja.png
 ---
 Nombre: Matias Irles ivanac
 

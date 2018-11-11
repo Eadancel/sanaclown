@@ -2,7 +2,7 @@
 path: tonejo
 layout: doctor
 nombre: Dr. Tonejo Disperso
-thumbnail: /assets/edu.png
+thumbnail: /assets/tonejo.png
 ---
 **Nombre**: Eduardo Matías Bustamante Contreras
 

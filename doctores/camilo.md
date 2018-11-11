@@ -2,7 +2,7 @@
 path: camilo
 layout: doctor
 nombre: Dr. Fósforito
-thumbnail: /assets/monho.png
+thumbnail: /assets/fosforito.png
 ---
 **Nombre**: Camilo Esteban Vargas Morales
 

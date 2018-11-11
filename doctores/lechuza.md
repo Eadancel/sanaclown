@@ -2,7 +2,7 @@
 path: lechuza
 layout: doctor
 nombre: Dra Lechuza del Bosque
-thumbnail: /assets/monho.png
+thumbnail: /assets/none.svg
 ---
 **Nombre**: Loreto Alejandra Pacheco Molina
 
