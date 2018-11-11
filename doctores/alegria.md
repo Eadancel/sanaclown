@@ -2,7 +2,7 @@
 path: alegria
 layout: doctor
 nombre: Dra Pantruca Rokota
-thumbnail: /assets/pabla.png
+thumbnail: /assets/pantruca.png
 ---
 **Nombre**: Pabla Vargas Aguilera
 
