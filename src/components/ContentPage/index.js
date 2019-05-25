@@ -58,8 +58,7 @@ const ContentPage = props => (
                 <ContactFormulario color={props.color}/>
             }
             <ImgWrp><Img resolutions={props.ContentImage.resolutions} /></ImgWrp>
-        </Content>
-        <Phrase>{props.Phrase}</Phrase>
+        </Content>s
     </Page>
 );
 

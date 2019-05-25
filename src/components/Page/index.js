@@ -62,9 +62,6 @@ const Page = props => (
             <Title color={props.titleColor} > {props.title}</Title>
         </Titlewrp>
             {props.children}
-        <UpIconWrp>
-            <UpIcon to="#"> <UPDown /> </UpIcon>
-        </UpIconWrp>
     </CPwrp>
 )
 export default Page

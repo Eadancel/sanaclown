@@ -4,7 +4,7 @@ import SocialBar from '../SocialBar';
 
 const Teamwrp = styled.div`
     display : grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 `;
 
 const ImgWrp = styled.div`
@@ -29,7 +29,8 @@ const FichaMarco = styled.div`
 const HeaderDoc = styled.div`
     display:flex;
     flex-direction: column;
-    width:146px;
+    color :#D0021B;
+    margin:auto;
 `;
 const SocialBlack =styled(SocialBar)`
     fill: #000000;
@@ -37,13 +38,20 @@ const SocialBlack =styled(SocialBar)`
 const TextoSemblaza = styled.div`
     flex:1;
 `;
+const ImgHeaderWRp = styled.div`
+    width:146px;
+    margin:auto;
+`;
+
 const Ficha = props =>(
     <FichaMarco>
         <HeaderDoc>
-            <img src={props.image} />
-
+            <ImgHeaderWRp>
+                <img src={props.image} />
+            </ImgHeaderWRp>
+            <h3>{props.nombre}</h3>
         </HeaderDoc>
-        <h3>{props.nombre}</h3>
+
         <TextoSemblaza dangerouslySetInnerHTML={{ __html: props.texto }}></TextoSemblaza>
     </FichaMarco>
 );
@@ -83,8 +91,18 @@ class Team extends React.Component {
 
       render() {
         let edges = this.props.semblanzas.edges;
+        let edges_left = edges.slice(0,edges.length/2);
+        let edges_right = edges.slice(edges.length/2);
         return (
           <Teamwrp>
+            <ImgWrp>
+                {edges_left.map(({node}) =>
+                    <MiniFicha>
+                        <img onMouseOver={this.handleMouseOver.bind(this,node)} onMouseOut={this.handleMouseOut.bind(this)} src={node.frontmatter.thumbnail}/>
+                        <div>{node.frontmatter.nombre}</div>
+                    </MiniFicha>
+                )}
+            </ImgWrp>
             <Ficha image={this.state.imgSrc}
                    texto={this.state.texto}
                    nombre={this.state.nombre}
@@ -92,7 +110,7 @@ class Team extends React.Component {
                    tw={this.state.twitter}
                    />
             <ImgWrp>
-                {edges.map(({node}) =>
+                {edges_right.map(({node}) =>
                     <MiniFicha>
                         <img onMouseOver={this.handleMouseOver.bind(this,node)} onMouseOut={this.handleMouseOut.bind(this)} src={node.frontmatter.thumbnail}/>
                         <div>{node.frontmatter.nombre}</div>
