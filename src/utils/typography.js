@@ -1,7 +1,7 @@
 import Typography from "typography";
 
 const typography = new Typography({
-    baseFontSize: '16px',
+    baseFontSize: '18px',
     baseLineHeight: 1,
     googleFonts: [
         {
@@ -10,10 +10,24 @@ const typography = new Typography({
             'normal',
             'bold'
           ],
-        }],
-    headerFontFamily: ['Oxygen Mono'],
-    bodyFontFamily: ['Oxygen Mono'],
-    headerWeight:'normal',
+        },
+        {
+          name: 'Baloo',
+          styles: [
+            'regular'
+          ],
+        },
+        {
+          name: 'Hind',
+          styles: [
+            'regular',
+            'bold'
+          ],
+        }
+      ],
+    headerFontFamily: ['Baloo'],
+    bodyFontFamily: ['Hind'],
+    headerWeight:'bold',
  });
 
 export default typography;

@@ -21,6 +21,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.AportesContent.frontmatter.phrase}
           ContentText={this.props.data.AportesContent.html}
           ContentImage={this.props.data.Image1}
+          BkgImage={this.props.data.BkgRight}
         />
 
 
@@ -32,6 +33,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.ProductosContent.frontmatter.phrase}
           ContentText={this.props.data.ProductosContent.html}
           ContentImage={this.props.data.Image2}
+          BkgImage={this.props.data.BkgLeft}
         />
 
       </div>
@@ -44,10 +46,21 @@ export default IndexPage;
 export const pageQuery = graphql`
   query DonacionImg {
     FrontImage: imageSharp(id: { regex: "/bkg_donaciones/" }) {
-        sizes(maxWidth: 1440 ) {
+        sizes(maxWidth: 1440,quality: 100 ) {
           ...GatsbyImageSharpSizes
         }
     }
+    BkgRight: imageSharp(id: { regex: "/bkgground_right/" }) {
+      resolutions(width: 1440,quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    BkgLeft: imageSharp(id: { regex: "/bkgground_left/" }) {
+      resolutions(width: 1440, quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+
     Image1: imageSharp(id: { regex: "/aportes/" }) {
       resolutions(width: 600 ) {
         ...GatsbyImageSharpResolutions

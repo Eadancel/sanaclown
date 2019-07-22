@@ -22,6 +22,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.UsContent.frontmatter.phrase}
           ContentText={this.props.data.UsContent.html}
           ContentImage={this.props.data.UsImage}
+          BkgImage={this.props.data.BkgRight}
         />
 
         <ContentPage
@@ -32,6 +33,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.MisionContent.frontmatter.phrase}
           ContentText={this.props.data.MisionContent.html}
           ContentImage={this.props.data.MisionImage}
+          BkgImage={this.props.data.BkgLeft}
         />
 
         <TeamPage
@@ -51,9 +53,19 @@ export default IndexPage;
 export const pageQuery = graphql`
   query AboutImg {
     FrontImage: imageSharp(id: { regex: "/bkg_index/" }) {
-        sizes(maxWidth: 1440 ) {
+        sizes(maxWidth: 1440, quality: 100 ) {
           ...GatsbyImageSharpSizes
         }
+    }
+    BkgRight: imageSharp(id: { regex: "/bkgground_right/" }) {
+      resolutions(width: 1440,quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    BkgLeft: imageSharp(id: { regex: "/bkgground_left/" }) {
+      resolutions(width: 1440, quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
     }
     UsImage: imageSharp(id: { regex: "/quien_somos/" }) {
       resolutions(width: 600 ) {

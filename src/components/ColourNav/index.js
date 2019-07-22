@@ -50,7 +50,7 @@ const StyledLink = styled(Link)`
     width:200px;
     color: white;
     & > h3 {
-        font-size:18px;
+        font-size:21px;
     }
     & > h4 {
         font-size:16px;
@@ -58,7 +58,7 @@ const StyledLink = styled(Link)`
 `;
 const SubMenuWrp = styled.div`
         text-align:left;
-        margin-top 1em;
+        margin-top: 1em;
 `;
 const NavItem = props => (
     <li style={{
@@ -120,8 +120,8 @@ const ColourNav = () => (
 
              ]} />
 
-             <NavItem color="#4A90E2" title="Noticias" to="/noticias" submenu={[]}  widthmenu="170px" translateX="40px" growsto="50px" align="left"/>
-             <NavItem color="#9D4AE2" title="Contacto" to="/contacto" submenu={[]}  widthmenu="160px" translateX="0px" growsto="50px" />
+             <NavItem color="#4A90E2" title="Noticias" to="/noticias" submenu={[]}  widthmenu="170px" translateX="40px" growsto="53px" align="left"/>
+             <NavItem color="#9D4AE2" title="Contacto" to="/contacto" submenu={[]}  widthmenu="160px" translateX="0px" growsto="53px" />
         </ul>
     </Nav>
 )

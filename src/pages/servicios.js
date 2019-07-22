@@ -21,6 +21,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.CharlasContent.frontmatter.phrase}
           ContentText={this.props.data.CharlasContent.html}
           ContentImage={this.props.data.Image1}
+          BkgImage={this.props.data.BkgRight}
         />
 
         <ContentPage
@@ -31,6 +32,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.JornadasContent.frontmatter.phrase}
           ContentText={this.props.data.JornadasContent.html}
           ContentImage={this.props.data.Image2}
+          BkgImage={this.props.data.BkgLeft}
         />
         <ContentPage
           anchor="talleres"
@@ -40,6 +42,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.TalleresContent.frontmatter.phrase}
           ContentText={this.props.data.TalleresContent.html}
           ContentImage={this.props.data.Image3}
+          BkgImage={this.props.data.BkgRight}
         />
         <ContentPage
           anchor="consulta"
@@ -49,6 +52,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.ConsultaContent.frontmatter.phrase}
           ContentText={this.props.data.ConsultaContent.html}
           ContentImage={this.props.data.Image4}
+          BkgImage={this.props.data.BkgLeft}
         />
         <ContentPage
 
@@ -59,6 +63,7 @@ class IndexPage extends React.Component {
           Phrase={this.props.data.ApoyoContent.frontmatter.phrase}
           ContentText={this.props.data.ApoyoContent.html}
           ContentImage={this.props.data.Image5}
+          BkgImage={this.props.data.BkgRight}
         />
       </div>
     );
@@ -70,10 +75,21 @@ export default IndexPage;
 export const pageQuery = graphql`
   query EscuelaImg {
     FrontImage: imageSharp(id: { regex: "/bkg_escuela/" }) {
-        sizes(maxWidth: 1440 ) {
+        sizes(maxWidth: 1440,quality: 100 ) {
           ...GatsbyImageSharpSizes
         }
     }
+    BkgRight: imageSharp(id: { regex: "/bkgground_right/" }) {
+      resolutions(width: 1440,quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    BkgLeft: imageSharp(id: { regex: "/bkgground_left/" }) {
+      resolutions(width: 1440, quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+
     Image1: imageSharp(id: { regex: "/cursos/" }) {
       resolutions(width: 558 ) {
         ...GatsbyImageSharpResolutions

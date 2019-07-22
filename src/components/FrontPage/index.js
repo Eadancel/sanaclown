@@ -6,8 +6,8 @@ const FPwrp = styled.div`
     height:100vh
 `;
 const BannerWrp = styled.div`
-    height:100%
-    display:grid
+    height:100%;
+    display:grid;
     grid-template-rows:1fr 2fr;
     grid-gap:20px;
     position:absolute;
@@ -25,7 +25,7 @@ const Banner = styled.div `
     color:white;
     flex-wrap:wrap;
     & > h1 {
-        width:100%
+        width:100%;
         font-size:5em;
         margin-top:0.5em;
     }

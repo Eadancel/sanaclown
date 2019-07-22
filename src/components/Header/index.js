@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import styled from "styled-components";
 
 const HeaderWrp = styled.div`
-        position:absolute
+        position:absolute;
         width: 100%;
         text-align: center;
         display: flex;

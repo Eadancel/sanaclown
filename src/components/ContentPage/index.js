@@ -6,17 +6,17 @@ import ContactForm from '../ContactForm';
 import Page from '../Page';
 import Link from "gatsby-link";
 import UPDown from '!svg-react-loader?name=Facebook!../../res/icons/up.svg';
+import BackgroundImage from 'gatsby-background-image'
+
 
 const Phrase = styled.div`
     position:absolute;
     right:0px;
-    bottom:30px
+    bottom:30px;
     width:500px;
     text-align:right;
     padding:10px;
     background: rgba(2,129,187,0.30);
-    font-weight:bold;
-    font-family:Verdana;
 `;
 
 const Content = styled.div`
@@ -34,7 +34,6 @@ const ImgWrp = styled.div`
 `;
 const ContentText = styled.div`
     margin: 10px;
-    font-family:Verdana;
     font-size:18px;
     line-height : 1.5em;
     grid-area : content
@@ -45,6 +44,9 @@ const ContactFormulario = styled(ContactForm)`
 
 `;
 const ContentPage = props => (
+    <BackgroundImage
+        resolutions={props.BkgImage.resolutions}
+    >
     <Page
         anchor={props.anchor}
         titleColor={props.titleColor}
@@ -58,8 +60,9 @@ const ContentPage = props => (
                 <ContactFormulario color={props.color}/>
             }
             <ImgWrp><Img resolutions={props.ContentImage.resolutions} /></ImgWrp>
-        </Content>s
+        </Content>
     </Page>
+    </BackgroundImage>
 );
 
 export default ContentPage

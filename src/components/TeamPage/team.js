@@ -17,6 +17,7 @@ const MiniFicha = styled.div`
     flex-direction : column ;
     width : 146px;
     padding:2px;
+    text-align: center;
 `;
 const FichaMarco = styled.div`
     display:flex;
@@ -31,6 +32,7 @@ const HeaderDoc = styled.div`
     flex-direction: column;
     color :#D0021B;
     margin:auto;
+    text-align: center;
 `;
 const SocialBlack =styled(SocialBar)`
     fill: #000000;
@@ -60,9 +62,9 @@ class Team extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-           imgSrc: '',
-           texto : '',
-           nombre : '',
+           imgSrc: 'assets/logo.png',
+           texto : 'Asociación de Payasos Terapéuticos de Hospital',
+           nombre : 'Sanaclown',
            facebook :'',
            twitter :'',
         };
@@ -81,9 +83,9 @@ class Team extends React.Component {
 
       handleMouseOut() {
         this.setState({
-          imgSrc: '',
-          texto : '',
-          nombre :'',
+          imgSrc: 'assets/logo.png',
+          texto : 'Asociación de Payasos Terapéuticos de Hospital',
+          nombre :'Sanaclown',
           facebook :'',
           twitter :'',
         });

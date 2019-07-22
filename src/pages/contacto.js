@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
           ContentType="contactform"
           ContentText=""
           ContentImage={this.props.data.Image1}
-
+          BkgImage={this.props.data.BkgRight}
         />
       </div>
     );
@@ -34,12 +34,22 @@ export default IndexPage;
 export const pageQuery = graphql`
   query ContactoImg {
     FrontImage: imageSharp(id: { regex: "/bkg_contacto/" }) {
-        sizes(maxWidth: 1440 ) {
+        sizes(maxWidth: 1440,quality: 100 ) {
           ...GatsbyImageSharpSizes
         }
     }
     Image1: imageSharp(id: { regex: "/formulario/" }) {
       resolutions(width: 600 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    BkgRight: imageSharp(id: { regex: "/bkgground_right/" }) {
+      resolutions(width: 1440,quality: 100 ) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    BkgLeft: imageSharp(id: { regex: "/bkgground_left/" }) {
+      resolutions(width: 1440, quality: 100 ) {
         ...GatsbyImageSharpResolutions
       }
     }

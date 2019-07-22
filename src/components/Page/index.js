@@ -17,7 +17,7 @@ const CPwrp = styled.div`
 const Phrase = styled.div`
     position:absolute;
     right:0px;
-    bottom:30px
+    bottom:30px;
     width:500px;
     text-align:right;
     padding:10px;
@@ -27,7 +27,7 @@ const Phrase = styled.div`
 `;
 const Titlewrp = styled.div`
     position:relative;
-    left:0px
+    left:0px;
     margin-bottom: 40px;
     width:200px;
     text-align:center;
@@ -37,7 +37,8 @@ const Title = styled.div`
     display: block;
     padding: 15px 50px;
     padding-left: 10px;
-
+    font-family: 'Baloo';
+    font-size : 21px;
     background-color: ${props => props.color ||  'red'};
     border-radius: 50px;
 `;
@@ -59,7 +60,7 @@ const UpIcon = styled(Link)`
 const Page = props => (
     <CPwrp id={props.anchor}>
         <Titlewrp >
-            <Title color={props.titleColor} > {props.title}</Title>
+            <Title color={props.titleColor} >{props.title}</Title>
         </Titlewrp>
             {props.children}
     </CPwrp>
